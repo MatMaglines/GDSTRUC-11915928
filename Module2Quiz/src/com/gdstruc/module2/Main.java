@@ -4,20 +4,33 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Player Homura = new Player (1,"Homura",120);
-        Player Madoka = new Player(2,"Madoka",80);
-        Player Sayaka = new Player(3,"Sayaka",90);
-        Player Mami = new Player(4,"Mami,",100);
-        Player Kyoko = new Player(5,"Kyoko",110);
+        Player Yachiyo = new Player (1,"Yachiyo",120);
+        Player Sana = new Player(2,"Sana",80);
+        Player Iroha = new Player(3,"Iroha",90);
+        Player Felicia = new Player(4,"Felicia",100);
+        Player Tsuruno = new Player(5,"Tsuruno",110);
 
         PlayerLinkedList playerLinkedList = new PlayerLinkedList();
 
-        playerLinkedList.addtofront(Homura);
-        playerLinkedList.addtofront(Madoka);
-        playerLinkedList.addtofront(Sayaka);
-        playerLinkedList.addtofront(Mami);
-        playerLinkedList.addtofront(Kyoko);
+        playerLinkedList.addtofront(Yachiyo);
+        playerLinkedList.addtofront(Sana);
+        playerLinkedList.addtofront(Iroha);
+        playerLinkedList.addtofront(Felicia);
+        playerLinkedList.addtofront(Tsuruno);
 
+        System.out.println("Before Removing First Node:");
         playerLinkedList.printList();
+
+        System.out.print("\nThe Length of the Linked List is:\n");
+        playerLinkedList.FindLength();
+
+
+        System.out.print("\nAfter Removing First Node:\n");
+        playerLinkedList.RemoveFirst();
+
+        System.out.print("\nThe Length of the Linked List is:\n");
+        playerLinkedList.FindLength();
+
+
     }
 }
