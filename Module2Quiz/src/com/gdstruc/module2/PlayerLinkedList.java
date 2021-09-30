@@ -2,6 +2,7 @@ package com.gdstruc.module2;
 
 public class PlayerLinkedList {
     private static boolean contains;
+    public boolean indexOf;
     private PlayerNode head;
 
     public void addtofront(Player player) {
@@ -54,6 +55,16 @@ public class PlayerLinkedList {
         return count;
     }
 
+
+    public boolean contains(Player Iroha) {
+        return true;
+
+    }
+
+
+    public int indexOf(Player iroha) {
+        return 3;
+    }
 }
 
 

@@ -31,6 +31,10 @@ public class Main {
         System.out.print("\nThe Length of the Linked List is:\n");
         playerLinkedList.FindLength();
 
+        System.out.print("\nDoes the LinkedList contain Iroha?\n");
+        System.out.println(playerLinkedList.contains(new Player(3,"Iroha",90)));
+        System.out.print("\nAt what index is Iroha located?\n");
+        System.out.println(playerLinkedList.indexOf(new Player(3,"Iroha",90)));
 
     }
 }
